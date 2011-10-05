@@ -1,0 +1,9 @@
+*.a
+*.so
+*.dll
+*.dylib
+bin
+build
+Build
+Builds
+builds
