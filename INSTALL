@@ -1,0 +1,161 @@
+
+Installation Instructions
+*************************
+
+To use MAGE pHTS with OS X, you need to have Xcode installed. 
+Then you can run the all the examples from one single Xcode project, just by 
+opening the .xcodeproj, selecting the example you want and clicking the 
+"Build and Run" button.
+
+To use MAGE pHTS with openFrameworks, you need to download openFrameworks 
+from: http://www.openframeworks.cc/download. Then you need to copy the 
+/ofxMageExamples in the /apps directory of openFrameworks, as well as copy 
+the /data directory in the /ofxMageExamples. Then you can run the ofxMageExamples 
+by opening the .xcodeproj and clicking the "Build and Run" button. 
+
+
+Installing Xcode:
+---------------------------------------------------------------------------------------
+MAGE is primarily developed with Xcode 3, but may work with other versions. 
+To install Xcode, you need to register as an Apple developer and download 
+the Xcode disk image from: https://connect.apple.com/
+
+
+Installing openFrameworks:
+---------------------------------------------------------------------------------------
+MAGE pHTS is primarily tested with of_preRelease_v0062_osx, but may work with 
+other versions. To install openFrameworks, visit : http://www.openframeworks.cc/setup
+
+
+Building MAGE pHTS:
+---------------------------------------------------------------------------------------
+	
+	* Unzip the file 
+	* open a terminal
+	
+	* cd MAGE_betaReleasee_v1.00
+	* mkdir build
+	* cd build
+	* cmake -DMAGE_REACTIVE=ON/OFF ..   
+					  /* you use ON option if you want to run the  */
+					  /* ofxMageExamples and OFF if you want to    */ 
+					  /* run the static examples				   */
+		NIOTE that you can set/modify serveral options (including MAGE_REACTIVE) 
+		by running the command "ccmake ." after you've run the "cmake" command the first time.
+		
+	* make
+	* sudo make install 
+	
+	* MAGE pHTS are installed in /usr/local/include/mage/ and /usr/local/lib/
+	* in the bin directory you will find the dynamic library and all the produced executables.
+	
+
+
+Building MAGE pHTS as an Xcode project:
+---------------------------------------------------------------------------------------
+	
+	* Unzip the file 
+	* open a terminal
+	
+	* cd MAGE_betaReleasee_v1.00
+	* mkdir build
+	* cd build
+	* cmake -G Xcode -DMAGE_REACTIVE=ON/OFF ..   
+					  /* you use ON option if you want to run the  */
+					  /* ofxMageExamples and OFF if you want to    */ 
+					  /* run the static examples				   */
+					  
+	* Then in the build directory you will find MAGE_PROJECT.xcodeproj, double click
+	  to open it with Xcode. From there you can run any of the examples.
+	  ATTENTION, you have to pass command line arguments for the executables. 
+	  
+	  In the sidebar, under "Executables", double click on the executable you want to run, 
+	  go to the "Arguments" tab, and change the arguments dependending on your needs. 
+	  By default the input arguments to be used are:
+	  
+	  		-td ../../data/voices/qst001/ver1/tree-dur.inf 
+	  		-tf ../../data/voices/qst001/ver1/tree-lf0.inf 
+	  		-tm ../../data/voices/qst001/ver1/tree-mgc.inf 
+	  		-md ../../data/voices/qst001/ver1/dur.pdf 
+	  		-mf ../../data/voices/qst001/ver1/lf0.pdf 
+	  		-mm ../../data/voices/qst001/ver1/mgc.pdf 
+	  		-dm ../../data/voices/qst001/ver1/mgc.win1 
+	  		-dm ../../data/voices/qst001/ver1/mgc.win2 
+	  		-dm ../../data/voices/qst001/ver1/mgc.win3 
+	  		-df ../../data/voices/qst001/ver1/lf0.win1 
+	  		-df ../../data/voices/qst001/ver1/lf0.win2 
+	  		-df ../../data/voices/qst001/ver1/lf0.win3 
+	  		-s 16000 -p 80 -a 0.42 -g 0 -l -b 0.0 
+	  		-cm ../../data/voices/qst001/ver1/gv-mgc.pdf 
+	  		-cf ../../data/voices/qst001/ver1/gv-lf0.pdf 
+	  		-dl 1 
+	  		-or ../../data/gen/qst001/ver1/mage_engine/NAME_OF_MY_OUTPUT 
+	  		../../data/data/labels/gen/alice01.lab
+	  
+	The audio synthesised will be the first sentence of Alice in Wonderland, and 
+	the produced .raw file will be created in the /data/gen/qst001/ver1/mage_engine/ 
+	directory. 
+
+
+
+Creating a new MAGE project in openFrameworks:
+---------------------------------------------------------------------------------------
+After you have installed MAGE pHTS, the easiest way to create a new MAGE project 
+in openFrameworks is to copy one that's similar to what you want to do. 
+
+For example:
+
+	* Copy the example folder ofxMageExamples/ in the apps/	directory.
+
+	* Copy the data folder ofxMageExamples/ directory.
+
+	* In this folder, copy an example folder like: ofxMageExamples/ofxEmptyExample/ 
+  	  and rename the copy to ofxMageExamples/myApp/
+
+	* Inside the myApp/ folder open the ofxEmptyExample.xcodeproj, and then from
+  	  Xcode menu go : project->rename and write "myApp" and click "ok".
+
+	* In the sidebar, under "Targets", right click on "ofxEmptyExample" and rename 
+  	  it to "myApp"
+
+	* In the sidebar, under "Executables", double click on "ofxEmptyExample", go to 
+  	  the "Arguments" tab, and change the arguments dependending on your needs. 
+  	  By default the input arguments to be used are:
+	
+		-td ../../../../../data/voices/qst001/ver1/tree-dur.inf 
+		-tf ../../../../../data/voices/qst001/ver1/tree-lf0.inf 
+		-tm ../../../../../data/voices/qst001/ver1/tree-mgc.inf 
+		-md ../../../../../data/voices/qst001/ver1/dur.pdf 
+		-mf ../../../../../data/voices/qst001/ver1/lf0.pdf 
+		-mm ../../../../../data/voices/qst001/ver1/mgc.pdf 
+		-dm ../../../../../data/voices/qst001/ver1/mgc.win1 
+		-dm ../../../../../data/voices/qst001/ver1/mgc.win2 
+		-dm ../../../../../data/voices/qst001/ver1/mgc.win3 
+		-df ../../../../../data/voices/qst001/ver1/lf0.win1 
+		-df ../../../../../data/voices/qst001/ver1/lf0.win2 
+		-df ../../../../../data/voices/qst001/ver1/lf0.win3 
+		-s 44100 -p 220 -a 0.76 -g 0 -l -b 0.0 
+		-cm ../../../../../data/voices/qst001/ver1/gv-mgc.pdf 
+		-cf ../../../../../data/voices/qst001/ver1/gv-lf0.pdf 
+		-dl 1 ../../../../../data/data/labels/gen/alice01.lab
+
+The audio synthesized will be the first sentence of Alice in Wonderland.
+
+ATTENTION : make sure that the library is well linked.
+
+Windows
+*************************
+
+It has not been tested on Windows.
+
+
+---------------------------------------------------------------------------------------
+
+Copyright (c) 2011  University of Mons 
+		NUMEDIART Institute for New Media Art Technology (www.numediart.org)
+		Acapela Group (www.acapela-group.com)
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without warranty of any kind.

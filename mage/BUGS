@@ -1,0 +1,29 @@
+
+This file lists the bugs you must be aware of.  Be sure to check this
+file before using MAGE or pHTS.
+
+*	Applications using MAGE should finalize and refresh the MAGE engine 
+    after a certain number of labels. Otherwise the audio thread is corrupted 
+    and there are glitches in the sound output.
+    
+*	Applications using MAGE outside of a threading environment should increase 
+	the capacity of the audio ring buffer to avoid thread locking.
+	( for the cmake use the -DMAGE_REACTIVE=ON/OFF option )
+	
+    
+
+------------------------------------------------------------------------------
+ 
+for reporting bugs, that are found (where possible with bug fixes) 
+	contact : maria.astrinaki@umons.ac.be ~ http://tcts.fpms.ac.be/~astrinaki/
+
+------------------------------------------------------------------------------
+
+Copyright (c) 2011  University of Mons 
+		NUMEDIART Institute for New Media Art Technology (www.numediart.org)
+		Acapela Group (www.acapela-group.com)
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without warranty of any kind.

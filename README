@@ -1,0 +1,76 @@
+===============================================================================
+                        The MAGE beta version 1.0
+                        release September 30, 2011
+
+pHTS (performative HTS) allows reactive speech synthesis and it is based on 
+the HMM-Based Speech Synthesis System (HTS). MAGE is the engine independent 
+and thread safe layer of pHTS and can be used in reactive application designs. 
+For the synthesis of the speech waveform we use HMMs trained by HTS. 
+
+It has been developed by University of Mons – NUMEDIART Institute and 
+Acapela Group. (see "Who we are" below and "AUTHORS" in the same directory).  
+
+
+
+*******************************************************************************
+                                    Copying
+*******************************************************************************
+
+This software is released under the GNU General Public License as published 
+by the Free Software Foundation, either version 3 of the license, or any 
+later version.
+See the COPYING file in the same directory as this file for the license.
+
+Although this software is free, we still offer no warranties and no maintenance.  
+We will continue to endeavor to fix bugs and answer queries when we can, but 
+are not in a position to guarantee it.  We will consider consultancy if desired, 
+please contacts us for details (see "AUTHORS" in the same directory).
+
+We strongly encourage you to
+
+ * report bugs, where possible with bug fixes, that are found
+
+See "COPYING" in the same directory for details.
+
+
+*******************************************************************************
+                                 Installation
+*******************************************************************************
+
+See "INSTALL" in the same directory for details.
+
+*******************************************************************************
+                                 Documentation
+*******************************************************************************
+
+Reference manual of MAGE and pHTS is available at
+
+	http://www.numediart.org/demos/mage_phts/
+
+PDF version of the above web page is also included in this release.
+
+*******************************************************************************
+                                  Who we are
+*******************************************************************************
+
+MAGE and pHTS has been developed by several members of 
+University of Mons – NUMEDIART Institute and Acapela Group. 
+
+Current members are :
+
+Maria Astrinaki	(Main Maintainer/Developer)		
+	http://tcts.fpms.ac.be/~astrinaki/      maria.astrinaki@umons.ac.be  
+	
+Geoffrey Wilfart
+											geoffrey.wilfart@acapela-group.com
+											
+Alexis Moinet 			
+	http://www.tcts.fpms.ac.be/~moinet/ 	alexis.moinet@umons.ac.be
+	
+Nicolas	d'Alessandro	
+	http://www.nicolasdalessandro.net/		nicolas@dalessandro.be
+	
+Thierry Dutoit			
+	http://tcts.fpms.ac.be/~dutoit/			thierry.dutoit@umons.ac.be 
+
+===============================================================================

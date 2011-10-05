@@ -1,0 +1,30 @@
+
+Beta Version 1.00:
+
+ * pHTS provides reactive speech synthesis based on the HMM-Based Speech Synthesis System (HTS).
+ 
+ * MAGE is the engine independent and thread safe layer of pHTS.
+ 
+ * The size of the PHTS_AUDIO_RINGBUFFER_SIZE determines the reactivity of the application, 
+   to change that in the cmake use the -DMAGE_REACTIVE=ON/OFF option. The bigget the buffer is, 
+   more stable the sound output is, BUT less reactive. The smaller the buffer is, more likely 
+   is to have glitches in the output audio or thread locking.
+ 	
+ * The original training of the voices are at 16kHz ( -s 16000 -p 80 -a 0.42 ).
+   In the examples/ there is no problem to use the original parameters for the synthesis 
+   (-s 16000 -p 80 -a 0.42). Remember to increase the PHTS_AUDIO_RINGBUFFER_SIZE to avoid 
+   thread locking ( for the cmake use the -DMAGE_REACTIVE=OFF option ). But in the 
+   ofxMageExamples/ the minimum sampling frequency used is 44.1 kHz. So, the arguments we 
+   propose for a natural sounding voice are -s 44100 -p 220 -a 0.76. Remember to keep the 
+   PHTS_AUDIO_RINGBUFFER_SIZE as small as possible for more reactivity.
+   ( for the cmake use the -DMAGE_REACTIVE=ON option ).
+
+ 	
+------------------------------------------------------------------------------
+
+Copyright (c) 2011  University of Mons – NUMEDIART Institute (www.numediart.org)
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without warranty of any kind.
