@@ -73,7 +73,6 @@ ADD_SUBDIRECTORY(${MAGE_SRC})
 
 #build the examples
 IF(BUILD_EXAMPLES)
-	#if MAKE_ONE_LIB is ON, the current mage/CMakeLists.txt doesn't include these
 	MESSAGE("Examples will be built:")
 	FOREACH(VAR ${MAGE_SRC_SUBDIRS})
 		INCLUDE_DIRECTORIES(${MAGE_SRC}/${VAR}) # add thread, htsengine, phtsengine and magelib to the path
