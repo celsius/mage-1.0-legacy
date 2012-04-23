@@ -40,7 +40,7 @@ Building MAGE pHTS:
 					  /* you use ON option if you want to run the  */
 					  /* ofxMageExamples and OFF if you want to    */ 
 					  /* run the static examples				   */
-		NIOTE that you can set/modify serveral options (including MAGE_REACTIVE) 
+		NOTE that you can set/modify serveral options (including MAGE_REACTIVE) 
 		by running the command "ccmake ." after you've run the "cmake" command the first time.
 		
 	* make

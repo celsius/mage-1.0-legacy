@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -276,6 +274,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>8</integer>
+									<integer>3</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -299,7 +299,7 @@
 							<real>326</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>208 184 1309 783 0 0 1680 1028 </string>
+						<string>-1748 267 1309 783 -1920 -150 1920 1200 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -310,12 +310,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>testApp.h</string>
+								<string>ofxMageThread.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,21 +325,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>testApp.h</string>
+										<string>ofxMageThread.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>7B6D61051435D0E5001C19B2</string>
+										<string>7BBB468C1545921E0061ACAC</string>
 										<key>history</key>
 										<array>
 											<string>7B2D282E1410106B00B457D4</string>
 											<string>7B2D283A1410109C00B457D4</string>
-											<string>7B2D289E1410143200B457D4</string>
 											<string>7B2D28DE14101F8E00B457D4</string>
-											<string>7B0F402F1411038E00059EE8</string>
-											<string>7B0F4061141103AE00059EE8</string>
-											<string>7B0F4B7E1415115400059EE8</string>
-											<string>7B3192F314154A0E00F7DD1A</string>
+											<string>7BBB46871545921E0061ACAC</string>
+											<string>7BBB46881545921E0061ACAC</string>
+											<string>7BBB46891545921E0061ACAC</string>
+											<string>7BBB468A1545921E0061ACAC</string>
+											<string>7BBB468B1545921E0061ACAC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -349,14 +351,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {961, 455}}</string>
+								<string>{{0, 0}, {961, 439}}</string>
 								<key>RubberWindowFrame</key>
-								<string>208 184 1309 783 0 0 1680 1028 </string>
+								<string>-1748 267 1309 783 -1920 -150 1920 1200 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>455pt</string>
+							<string>439pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -369,14 +371,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 460}, {961, 282}}</string>
+								<string>{{0, 444}, {961, 298}}</string>
 								<key>RubberWindowFrame</key>
-								<string>208 184 1309 783 0 0 1680 1028 </string>
+								<string>-1748 267 1309 783 -1920 -150 1920 1200 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>282pt</string>
+							<string>298pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -395,9 +397,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>7B6D60F81435D0DD001C19B2</string>
+				<string>7BBB468D1545921E0061ACAC</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>7B6D60F91435D0DD001C19B2</string>
+				<string>7BBB468E1545921E0061ACAC</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -535,15 +537,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>7B6D61031435D0DD001C19B2</string>
-		<string>7B6D61041435D0DD001C19B2</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>7BE0C54813EAF45D004896BF</string>
-		<string>/Users/Maipn/Documents/myLibs/ofxCleo-v0.2/of_preRelease_v0062_osxSL_FAT/apps/ofxMageExamples copy/ofxAlphaOverwriteExample/ofxAlphaOverwriteExample.xcodeproj</string>
+		<string>/Users/Maipn/Documents/PhD/HTS/Code/MAGE_betaRelease_v1.00_updatedLicense/ofxMageExamples/ofxAlphaOverwriteExample/ofxAlphaOverwriteExample.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>208 184 1309 783 0 0 1680 1028 </string>
+	<string>-1748 267 1309 783 -1920 -150 1920 1200 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -620,7 +618,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>7BE0C54813EAF45D004896BF</string>
-				<string>7B6D60FA1435D0DD001C19B2</string>
+				<string>7BBB468F1545921E0061ACAC</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
